@@ -7,6 +7,9 @@ metadata:
     environment: developer
     team: infra-ops
     project: qt-ecommerce
+  annotations:
+    commit-id: 90u786tyvhnuftfjj
+    jira-issue: bhdsbcijsizsjcbsncjbbasjavsj
 spec:
   containers:
     - name: nginx-container
