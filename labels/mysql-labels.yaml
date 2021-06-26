@@ -1,16 +1,17 @@
----
+
+ ---
 apiVersion: v1
-kind: pod
-mertdata:
+kind: Pod
+metadata:
   name: label-demo2
   labels:
-    environmemt: developer
+    environment: developer
     team: infra-ops
-    project: qt-ecomerce
+    project: qt-ecommerce
 spec:
   containers:
-   - name: jenkins-container
-     image: jenkins/jenkins
-     prots:
-      - containerport: 8080
-        protocol: TCP  
+    - name: mysql-container
+      image: mysql
+      ports:
+        - containerPort: 80
+          protocol: TCP 
