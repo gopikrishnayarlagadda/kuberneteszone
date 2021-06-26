@@ -1,0 +1,16 @@
+---
+apiVersion: v1
+kind: pod
+mertdata:
+  name: label-demo2
+  labels:
+    environmemt: developer
+    team: infra-ops
+    project: qt-ecomerce
+spec:
+  containers:
+   - name: jenkins-container
+     image: jenkins/jenkins
+     prots:
+      - containerport: 8080
+        protocol: TCP    
